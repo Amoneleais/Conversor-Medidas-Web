@@ -1,0 +1,106 @@
+#box{
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-width:5px;
+    border-radius: 10px;
+}
+
+#title{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+#valueBox{
+    text-align: center;
+}
+
+#valueInput{
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    color: #000000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+}
+
+#valueInput::placeholder{
+    color: black;
+}
+
+#valueInput:focus::placeholder{
+    color: transparent;
+}
+
+#valueInput::-webkit-outer-spin-button, #valueInput::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#radioBox{
+    height: 50px;
+    width: 650px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#radioButtons{
+    padding-left: 10px;
+    padding-top: 13px;
+    font-size: larger;
+    color: rgb(3, 3, 3);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.formulary{
+    cursor: pointer;
+}
+
+#resultBox{
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: absolute;
+}
+
+#result{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Mono', monospace;
+}
+
+input[type=radio]{
+    border: 1px solid #000000;
+    padding: 0.5em;
+    -webkit-appearance: none;
+}
+
+input[type=radio]:checked{
+    background-color: black;
+    background-size: 9px 9px;
+}
+
+input[type=radio]:focus{
+    outline-color: transparent;
+}
+
+#watermark{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ConversorMetros/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <title>Conversor de Medidas | Amonel</title>
+</head>
+<body>
+    <div id="box">
+        <div id="title">
+            <h1>CONVERSOR DE MEDIDAS (METROS)</h1>
+        </div>
+        <div id="valueBox">
+            <input onKeyPress="if(this.value.length==18) return false;" type="number" id="valueInput" placeholder="Clique aqui" onblur="getValue()">
+        </div>
+        <br>
+        <div id="radioBox">
+            <div id="radioButtons">
+                <input type="radio" value="mm" name="formulary" id="mm" class="formulary">
+                <label for="mm" class="formulary">Milimetros</label>
+                <input type="radio" value="cm" name="formulary" id="cm" class="formulary">
+                <label for="cm" class="formulary">Centimetros</label>
+                <input type="radio" value="dm" name="formulary" id="dm" class="formulary">
+                <label for="dm" class="formulary">Decimetros</label>
+                <input type="radio" value="dam" name="formulary" id="dam" class="formulary">
+                <label for="dam" class="formulary">Decâmetros</label>
+                <input type="radio" value="hm" name="formulary" id="hm" class="formulary">
+                <label for="hm" class="formulary">Hectômetros</label>
+                <input type="radio" value="km" name="formulary" id="km" class="formulary">
+                <label for="km" class="formulary">Quilômetros</label>
+            </div>
+        </div>
+        <div id="resultBox">
+            <h3 id="result"></h3>
+        </div>
+        <br>
+    </div>
+    <div id="watermark">
+        <p><a href="https://github.com/Amoneleais" target="_blank" style="color: inherit; text-decoration: none;">MADE BY AMONEL</a></p>
+    </div>
+    <script src="/ConversorMetros/js/app.js"></script>
+</body>
+</html>
