@@ -1,11 +1,17 @@
 var result = document.getElementById("result")
 var select = document.getElementById("radioBox")
 var value = document.getElementById("valueInput")
+const watermark = document.getElementById("watermark")
 
 function getValue(){
     const value = parseFloat(document.querySelector("#valueInput").value)
     return value
 }
+
+watermark.addEventListener("click", function openTab() {
+    window.open("https://github.com/Amoneleais", "_blank").focus()
+})
+
 
 value.addEventListener("click", function deselect() {
     var option = document.querySelector('input[name="formulary"]:checked').checked = false
