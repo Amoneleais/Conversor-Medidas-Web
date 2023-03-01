@@ -173,3 +173,17 @@ input[type=radio]:focus{
     background-color: rgb(255, 255, 255);
     transition: 0.5s; 
 }
+
+#delete{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    padding: 0px 10px 0px 10px;
+    margin-right: 5px;
+    margin-bottom: 18px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+}

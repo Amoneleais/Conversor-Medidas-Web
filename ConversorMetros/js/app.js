@@ -1,7 +1,15 @@
 var result = document.getElementById("result")
 var select = document.getElementById("radioBox")
-var value = document.getElementById("valueInput")
+var valueInput = document.getElementById("valueInput")
 const watermark = document.getElementById("watermark")
+
+document.addEventListener("keydown", (event) => {
+    if (event.key == "Delete") {
+        valueInput.value = ''
+        var option = document.querySelector('input[name="formulary"]:checked').checked = false
+        result.innerText = ""
+    }    
+})
 
 function getValue(){
     const value = parseFloat(document.querySelector("#valueInput").value)
@@ -12,14 +20,13 @@ watermark.addEventListener("click", function openTab() {
     window.open("https://github.com/Amoneleais", "_blank").focus()
 })
 
-
-value.addEventListener("click", function deselect() {
+valueInput.addEventListener("click", function deselect() {
     var option = document.querySelector('input[name="formulary"]:checked').checked = false
     result.innerText = ""
 })
 
 select.addEventListener("click", function getForm(){
-    var option = document.querySelector('input[name="formulary"]:checked').value
+    option = document.querySelector('input[name="formulary"]:checked').value
     if(isNaN(getValue())){
         result.innerText = ""
         return;
