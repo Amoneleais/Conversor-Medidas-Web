@@ -1,14 +1,21 @@
 var result = document.getElementById("result")
 var select = document.getElementById("radioBox")
+var value = document.getElementById("valueInput")
 
 function getValue(){
     const value = parseFloat(document.querySelector("#valueInput").value)
     return value
 }
 
+value.addEventListener("click", function deselect() {
+    var option = document.querySelector('input[name="formulary"]:checked').checked = false
+    result.innerText = ""
+})
+
 select.addEventListener("click", function getForm(){
     var option = document.querySelector('input[name="formulary"]:checked').value
     if(isNaN(getValue())){
+        result.innerText = ""
         return;
     }
     if(option == "mm") {
