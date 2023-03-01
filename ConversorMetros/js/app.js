@@ -20,27 +20,27 @@ select.addEventListener("click", function getForm(){
     }
     if(option == "mm") {
         const number = getValue() * 1000
-        result.innerText = number + " MILÍMETROS"
+        result.innerText = number + " milímetros"
     }
     else if(option == "cm"){
         const number = getValue() * 100
-        result.innerText = number + " CENTÍMETROS"
+        result.innerText = number + " centímetros"
     }
     else if(option == "dm"){
         const number = getValue() * 10
-        result.innerText = number + " DECÍMETROS"
+        result.innerText = number + " decímetros"
     }
     else if(option == "dam"){
         const number = getValue() / 10
-        result.innerText = number + " DECÂMETROS"
+        result.innerText = number + " decâmetros"
     }
     else if(option == "hm"){
         const number = getValue() / 100
-        result.innerText = number + " HECTÔMETROS"
+        result.innerText = number + " hectômetros"
     }
     else if(option == "km"){
         const number = getValue() / 1000
-        result.innerText = number + " QUILÔMETROS"
+        result.innerText = number + " quilômetros"
     }
 })
 
