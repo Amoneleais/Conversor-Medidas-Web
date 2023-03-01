@@ -184,7 +184,7 @@ input[type=radio]:focus{
     left:0;
     padding: 0px 10px 0px 10px;
     margin-right: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     user-select: none;
     color: white;
     animation: blink-animation 1s steps(5, start) infinite;
