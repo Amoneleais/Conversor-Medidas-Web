@@ -12,6 +12,7 @@ body{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-width:5px;
+    border-radius: 15px;
 }
 
 #title{
@@ -130,6 +131,7 @@ label.formulary{
 #result{
     text-align: center;
     color: rgb(0, 0, 0);
+    font-size: 25px;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -181,9 +183,15 @@ input[type=radio]:focus{
     bottom: 0;
     left:0;
     padding: 0px 10px 0px 10px;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-bottom: 18px;
     user-select: none;
-    cursor: pointer;
     color: white;
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
 }
