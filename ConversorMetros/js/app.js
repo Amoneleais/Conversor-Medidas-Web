@@ -1,12 +1,12 @@
-var result = document.getElementById("result")
-var select = document.getElementById("radioBox")
-var valueInput = document.getElementById("valueInput")
+let result = document.getElementById("result")
+let select = document.getElementById("radioBox")
+let valueInput = document.getElementById("valueInput")
 const watermark = document.getElementById("watermark")
 
 document.addEventListener("keydown", (event) => {
     if (event.key == "Delete") {
         valueInput.value = ''
-        var option = document.querySelector('input[name="formulary"]:checked').checked = false
+        let option = document.querySelector('input[name="formulary"]:checked').checked = false
         result.innerText = ""
     }    
 })
@@ -21,12 +21,12 @@ watermark.addEventListener("click", function openTab() {
 })
 
 valueInput.addEventListener("click", function deselect() {
-    var option = document.querySelector('input[name="formulary"]:checked').checked = false
+    let option = document.querySelector('input[name="formulary"]:checked').checked = false
     result.innerText = ""
 })
 
 select.addEventListener("click", function getForm(){
-    option = document.querySelector('input[name="formulary"]:checked').value
+    let option = document.querySelector('input[name="formulary"]:checked').value
     if(isNaN(getValue())){
         result.innerText = ""
         return;
